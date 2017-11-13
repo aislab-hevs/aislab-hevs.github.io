@@ -21,13 +21,149 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
+
+	<style>
+		.address {
+			position: absolute;
+			bottom: 10px;
+			width: 100%;
+			text-align: center;
+			color: #777777;
+			font-size: 1.5em;
+		}
+
+		.red {
+			color: #FF2C2D !important;
+		}
+
+		.blue {
+			color: #1B91FF !important;
+		}
+
+		.green {
+			color: #17FF2E !important;
+		}
+
+		.darkbg {
+			background-color: rgba(0, 0, 0, 0.5) !important;
+		}
+
+		.whitebg {
+			background-color: rgba(255, 255, 255, 1) !important;
+		}
+
+		.simple-image {
+			border: none !important;
+			background: none !important;
+			box-shadow: none !important;
+		}
+
+		.clearfix:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+
+		.clearfix {
+			display: inline-block;
+		}
+
+		/* start commented backslash hack \*/
+
+		* html .clearfix {
+			height: 1%;
+		}
+
+		.clearfix {
+			display: block;
+		}
+
+		/* close commented backslash hack */
+	</style>
 </head>
 
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section>Slide 1</section>
-			<section>Slide 2</section>
+			<section>
+
+				<section id="aislab-research-group" data-background="#8bf996">
+					<h1>AISLab Research Group</h1>
+				</section>
+
+				<section data-background-image="images/zermatt-1600.jpg">
+					<h2>Location</h2>
+					<p style="font-weight: bold; font-size: 0.5em; color: white;">Photo credit: Jean Revillard</p>
+				</section>
+
+				<section data-background-image="images/zermatt-1600.jpg">
+					<img class="darkbg" src="images/europe.svg" />
+				</section>
+
+				<section data-background-image="images/zermatt-1600.jpg">
+					<img class="darkbg" src="images/swiss.svg" />
+				</section>
+
+				<section>
+					<h2>
+						<i class="fa fa-sitemap"></i> Organization</h2>
+					<p>HES (Swiss University of Applied Sciences)</p>
+					<p>
+						<i class="fa fa-ellipsis-v"></i>
+					</p>
+					<p>Institute of Business Informatics</p>
+					<p>
+						<i class="fa fa-chevron-down"></i>
+					</p>
+					<p>eHealth Unit</p>
+					<p>
+						<i class="fa fa-chevron-down"></i>
+					</p>
+					<p>AISLab</p>
+				</section>
+
+				<section>
+					<h2>eHealth Unit</h2>
+					<div class="clearfix">
+						<div style="float: left; width: 50%;">
+							<p>AISLab</p>
+							<img class="simple-image" src="images/aislab.png" />
+						</div>
+						<div style="float: right; width: 50%;">
+							<p>MedGIFT</p>
+							<img class="simple-image" src="images/medgift.png" />
+						</div>
+					</div>
+				</section>
+
+				<section data-background-image="images/aislab_group.jpg">
+					<h2>AISLab</h2>
+					<div class="fragment fade-up clearfix" style="background-color: rgba(0, 0, 0, 0.8); padding-top: 0.5em;">
+						<div style="float: left; width: 50%;">
+							<img class="simple-image" src="images/aislab_position.svg" style="margin-top: 1.5em;" \>
+						</div>
+						<div style="float: right; width: 50%; font-size: 0.7em;">
+							<p>
+								<h3>Projects</h3>
+								<ul>
+									<li>Non-invasive Type 1 Diabetes Monitoring</li>
+									<li>Electronic Health Record Anonymisation</li>
+									<li>Gestational diabetes</li>
+									<li>Chronic Obstructive Pulmonary Disease (COPD)</li>
+									<li>Therapeutic drug monitoring</li>
+									<li>…</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</section>
+
+			</section>
+
+
 		</div>
 	</div>
 
